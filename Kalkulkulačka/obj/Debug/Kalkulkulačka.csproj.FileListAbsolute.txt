@@ -1,0 +1,9 @@
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\bin\Debug\Kalkulkulačka.exe.config
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\bin\Debug\Kalkulkulačka.exe
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\bin\Debug\Kalkulkulačka.pdb
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\obj\Debug\Kalkulkulačka.csprojAssemblyReference.cache
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\obj\Debug\Kalkulkulačka.Form1.resources
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\obj\Debug\Kalkulkulačka.Properties.Resources.resources
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\obj\Debug\Kalkulkulačka.csproj.GenerateResource.cache
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\obj\Debug\Kalkulkulačka.exe
+C:\Users\kolacekj.ita19\source\repos\Kalkulkulačka\Kalkulkulačka\obj\Debug\Kalkulkulačka.pdb
