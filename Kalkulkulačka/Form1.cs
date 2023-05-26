@@ -21,129 +21,10 @@ namespace Kalkulkulačka
             InitializeComponent();
         }
 
-        /*
-        float nmr, ans;
-        int count;
-        */
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        /*
-
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 0;
-        }
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 1;
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 2;
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 3;
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 4;
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 5;
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 6;
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 7;
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 8;
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text += 9;
-        }
-
-        */
-        /*
-        private void btnlomeno_Click(object sender, EventArgs e)
-        {
-            nmr = float.Parse(txtOutput.Text);
-            txtOutput.Clear();
-            txtOutput.Focus();
-            count = 4;
-            label1.Text = nmr.ToString() + "/";
-        }
-
-        private void btnhvezda_Click(object sender, EventArgs e)
-        {
-            nmr = float.Parse(txtOutput.Text);
-            txtOutput.Clear();
-            txtOutput.Focus();
-            count = 3;
-            label1.Text = nmr.ToString() + "*";
-        }
-
-        private void btnplus_Click(object sender, EventArgs e)
-        {
-            nmr = float.Parse(txtOutput.Text);
-            txtOutput.Clear();
-            txtOutput.Focus();
-            count = 1;
-            label1.Text = nmr.ToString() + "+";
-        }
-        */
-        /*
-        private void btnequal_Click(object sender, EventArgs e)
-        {
-            compute();
-            label1.Text = "";
-        }
-        */
-        /*
-        private void btnminus_Click(object sender, EventArgs e)
-        {
-            nmr = float.Parse(txtOutput.Text);
-            txtOutput.Clear();
-            txtOutput.Focus();
-            count = 2;
-            label1.Text = nmr.ToString() + "-";
-        }
-        */
-
-        /*
-        private void btncarka_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text = txtOutput.Text + ",";
-        }
-        */
-
-        /*
-        private void btnCE_Click(object sender, EventArgs e)
-        {
-            txtOutput.Text = "";
-            label1.Text = "";
-        }
-        */
 
         private void btnC_Click(object sender, EventArgs e)
         {
@@ -160,13 +41,9 @@ namespace Kalkulkulačka
         {
             string stisknuto = ((Button)sender).Text;
 
-            // Když už je jedna desetinná čárka napsaná, tak se další nenapíše.
             if (txtOutput.Text.Contains(",") && stisknuto == ",")
                 return;
 
-            // Když je napsaná jen nula, tak se vymaže,
-            // aby se napsal stisknutý znak.
-            // Když je stisknuta desetinná čárka, tak se nula nevymaže.
             if (txtOutput.Text == "0" && stisknuto != ",")
                 txtOutput.Text = "";
 
@@ -183,7 +60,6 @@ namespace Kalkulkulačka
                 kalkulacka.Vypocitej();
                 txtOutput.Text = kalkulacka.Vysledek.ToString();
             }
-            // Když se dělí nulou, tak se zachytí výjimka.
             catch (Exception ex)
             {
                 kalkulacka.Resetuj();
@@ -224,7 +100,7 @@ namespace Kalkulkulačka
             NastavOperaci(Operace.Rozdil);
         }
 
-        /*
+        
         public void compute()
         {
             switch (count)
@@ -252,7 +128,7 @@ namespace Kalkulkulačka
 
             }
         }
-        */
+        
 
         private void NastavOperaci(Operace operace)
         {
